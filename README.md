@@ -1,8 +1,20 @@
 ## PEditTextView
 ### Demo
-
+<img src="./number.jpg"/>
+<img src="./password.jpg"/></br>
 ### How To Use
 
+
+```
+<me.leefeng.viewlibrary.PEditTextView
+   android:layout_width="400dp"
+   android:layout_height="60dp"
+   android:layout_margin="50dp"
+   android:background="#fff"
+   android:padding="5dp"
+   app:is_password="false"
+   app:length="6" />
+```
 
 
 
