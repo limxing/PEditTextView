@@ -49,6 +49,12 @@ public class PEditTextView extends ViewGroup {
         init(context);
     }
 
+    public void showKeyBoard(){
+        editText.setFocusable(true);
+        editText.requestFocus();
+        imm.showSoftInput(editText, InputMethodManager.SHOW_FORCED);
+    }
+
     public void setListener(PEditTextFinishListener listener) {
         this.listener = listener;
     }
@@ -101,9 +107,7 @@ public class PEditTextView extends ViewGroup {
     public boolean dispatchTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_UP:
-                editText.setFocusable(true);
-                editText.requestFocus();
-                imm.showSoftInput(editText, InputMethodManager.SHOW_FORCED);// 显示输入法
+                showKeyBoard();
                 break;
 
         }
