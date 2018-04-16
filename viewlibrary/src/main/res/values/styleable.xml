@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PEditTextView">
+        <attr name="length" format="integer" />
+        <attr name="box_padding" format="dimension" />
+        <attr name="focus_color" format="color" />
+        <attr name="normal_color" format="color" />
+        <attr name="text_color" format="color" />
+        <attr name="is_password" format="boolean" />
+    </declare-styleable>
+</resources>
