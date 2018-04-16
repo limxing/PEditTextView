@@ -2,22 +2,38 @@
 ### Demo
 <img src="./number.jpg"/>
 <img src="./password.jpg"/></br>
+
 ### How To Use
 
+[![](https://jitpack.io/v/limxing/PEditTextView.svg)](https://jitpack.io/#limxing/PEditTextView)
+
+Step 1. Add the JitPack repository to your build file
 
 ```
-<me.leefeng.viewlibrary.PEditTextView
-   android:layout_width="400dp"
-   android:layout_height="60dp"
-   android:layout_margin="50dp"
-   android:background="#fff"
-   android:padding="5dp"
-   app:is_password="false"
-   app:length="6" />
+allprojects {
+     repositories {
+         ...
+         maven { url 'https://jitpack.io' }
+     }
+ }
 ```
+Step 2. Add the dependency
+
+	dependencies {
+	        compile 'com.github.limxing:PEditTextView:1.0'
+	}
+
+Step 3. Add the layout
 
 
-
+    <me.leefeng.viewlibrary.PEditTextView
+       android:layout_width="400dp"
+       android:layout_height="60dp"
+       android:layout_margin="50dp"
+       android:background="#fff"
+       android:padding="5dp"
+       app:is_password="false"
+       app:length="6" />
 
 
 ### License
