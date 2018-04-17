@@ -53,7 +53,13 @@ public class PEditTextView extends ViewGroup {
         editText.setFocusable(true);
         editText.requestFocus();
         imm.showSoftInput(editText, InputMethodManager.SHOW_FORCED);
+    }
 
+    public void clearAll(){
+        for (int i = 0; i < boxCount; i++) {
+            list.get(i).text = "";
+        }
+        invalidate();
     }
 
     public void setListener(PEditTextFinishListener listener) {
@@ -154,7 +160,6 @@ public class PEditTextView extends ViewGroup {
             list.get(i).bottom = bottom;
         }
         editText.layout(0, 0, 1, 0);
-
     }
 
     @Override
