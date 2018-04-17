@@ -49,10 +49,11 @@ public class PEditTextView extends ViewGroup {
         init(context);
     }
 
-    public void showKeyBoard(){
+    public void showKeyBoard() {
         editText.setFocusable(true);
         editText.requestFocus();
         imm.showSoftInput(editText, InputMethodManager.SHOW_FORCED);
+
     }
 
     public void setListener(PEditTextFinishListener listener) {
@@ -207,12 +208,14 @@ public class PEditTextView extends ViewGroup {
 
     @Override
     protected void onDetachedFromWindow() {
-        editText = null;
         _paint = null;
         list.clear();
         list = null;
         rectF = null;
+        editText.clearFocus();
+        imm.hideSoftInputFromWindow(getWindowToken(), 0);
         imm = null;
+        editText = null;
         textRect = null;
         super.onDetachedFromWindow();
     }
@@ -220,4 +223,5 @@ public class PEditTextView extends ViewGroup {
     public interface PEditTextFinishListener {
         void callBack(String result);
     }
+
 }
