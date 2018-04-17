@@ -21,6 +21,7 @@
         android:background="#aaa">
 
         <me.leefeng.viewlibrary.PEditTextView
+            android:id="@+id/pe"
             android:layout_width="400dp"
             android:layout_height="60dp"
             android:layout_margin="50dp"

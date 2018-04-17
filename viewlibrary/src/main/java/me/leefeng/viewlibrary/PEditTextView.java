@@ -89,7 +89,7 @@ public class PEditTextView extends ViewGroup {
                     invalidate();
                 }
                 if (text.length == boxCount && listener != null) {
-                    listener.callBack(text.toString());
+                    listener.callBack(s.toString());
 
                 }
             }
