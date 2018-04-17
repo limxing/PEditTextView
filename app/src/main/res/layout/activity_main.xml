@@ -26,7 +26,7 @@
             android:layout_margin="50dp"
             android:background="#fff"
             android:padding="5dp"
-            app:is_password="true"
+            app:is_password="false"
             app:length="6" />
     </RelativeLayout>
 
